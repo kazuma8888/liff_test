@@ -1,0 +1,22 @@
+<html>
+    <body>
+        Welcome to Myapp!!
+
+        <form method="POST", action="/database/new">
+            <!--actionでどのurlにpostを送るのか決める、無記入はこのhtmlに送信x-->
+            <p>テキストを入力<input type="text" name="name"></p>
+            <p>メールを入力<input type="text" name="mail"></p>
+            <p>パスワードを入力<input type="text" name="password"></p>
+            <p>数字を入力<input type="number" name="aigaku_bunnrui" step="1"></p>
+            <!--type='number'で数字入力になる。stepを設定することで入力できる数字を絞る、例えば1なら整数のみ,10なら10の倍数のみになる-->
+            <select name="select">
+                ここに何書いても意味ない笑
+                <option value='こっちの値がpython側に渡される'>こっちが画面に表示される</option>
+                <option value="こっちの値がpython側に渡される">こっちが画面に表示される</option>
+            </select>
+            <!--selectで囲ってoptionをつけると選択肢ありのやつになる。valueに入るのは文字列になるっぽい。数字はあとで変換するしかない-->
+            <input type="submit" value="Submit">
+            <!--tyoe='submit'にすることで送信ボタンになる。valueはボタンに描かれる文字-->
+        </form>
+    </body>
+</html>

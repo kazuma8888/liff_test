@@ -1,0 +1,4 @@
+Flask==0.12.2
+Werkzeug<0.13.0,>=0.12.0 #flakのサーバーサイド関連
+#FlaskはWerkzeugというWSGI規格のアプリ(これは...そういうもんと思ってください)をつくるためのツールと、Jinja2というテンプレートエンジン（HTML内に動的に変数を埋め込むもの。PHPでいうTwig）を利用します。
+#説明https://gihyo.jp/dev/feature/01/wsgi/0001
